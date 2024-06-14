@@ -1,0 +1,117 @@
+body, html {
+    height: auto;
+    margin: 0;
+    padding: 0;
+    font-family: 'Cinzel', serif;
+    background-color: #1b1b1b; /* Dark background for the overall theme */
+    color: #f0e6d2; /* Light text color for readability */
+}
+
+.bg {
+    background-image: url('img/fond.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    filter: brightness(0.5); /* Darken the background image for better contrast with text */
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    z-index: 1;
+    position: relative;
+    padding-top: 80px; /* Increased space for the navigation bar */
+}
+
+.navbar {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #f0e6d2;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0; /* Increased padding for better appearance */
+    z-index: 2;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Added shadow for depth */
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    padding: 0 25px; /* Increased padding for better spacing */
+}
+
+.navbar a {
+    color: #f0e6d2;
+    text-decoration: none;
+    font-size: 18px; /* Increased font size for readability */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.navbar a:hover {
+    color: #ff6347; /* Highlight color on hover */
+}
+
+.titre-texte {
+    font-size: 4em; /* Increased font size for emphasis */
+    color: #ff6347; /* Color matching the game theme */
+    text-shadow: 2px 2px 4px #000000;
+    margin-bottom: 0.5em;
+}
+
+.btn-telecharger {
+    background-color: rgb(83, 145, 126);
+    color: white;
+    font-size: 18px; /* Increased font size for better button appearance */
+    padding: 15px 30px; /* Increased padding for a larger button */
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s;
+    border: none;
+    margin-bottom: 1em; /* Added margin for spacing */
+}
+
+.btn-telecharger:hover {
+    background-color: #53917e;
+}
+.game-image {
+    max-width: 30px;
+    min-width: 50px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    height: auto;
+}
+
+.section {
+    background-color: rgba(0, 0, 0, 0.85); /* Darker background for sections */
+    color: #f0e6d2;
+    padding: 30px; /* Increased padding for better content spacing */
+    border-radius: 10px;
+    margin: 1.5em;
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75); /* Enhanced shadow for depth */
+    text-align: justify; /* Justify text for better readability */
+}
+
+@media (min-width: 768px) {
+    .section {
+        width: 60%;
+        margin: 1.5em auto;
+    }
+}
