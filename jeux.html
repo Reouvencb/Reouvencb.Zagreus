@@ -104,7 +104,31 @@
                 margin: 1em auto;
             }
         }
+        .section {
+            display: flex;
+            flex-direction: column; /* Change la direction de la flexbox en colonne */
+            align-items: center; /* Centre le contenu horizontalement */
+            text-align: center; /* Centre le texte */
+        }
+        .title {
+            font-size: 24px; /* Taille du texte pour le titre */
+            margin-bottom: 20px; /* Espacement entre le titre et les images */
+        }
+        .images {
+            display: flex; /* Utilise Flexbox pour aligner les images horizontalement */
+            justify-content: center; /* Centre les images horizontalement dans leur conteneur */
+            width: 100%; /* Prend toute la largeur disponible */
+        }
+        .game-image {
+            width: 200px;
+            height: 150px;
+            margin: 10px; /* Espacement entre les images */
+        }
+        .right-image {
+            margin-left: auto; /* Pousse la troisième image à la droite */
+        }
     </style>
+
 </head>
 <body>
 
@@ -137,14 +161,16 @@
         <p>  <img src="attack.png" alt="attaque du joueur" class="game-image" style="width: 200px; height: 150px;">
     </div>
     <div class="section">
-        <h2>Des monstres effrayants</h2>
-        <p>
-            <img src="monstre.png" alt="Demon arc" class="game-image" style="width: 200px; height: 150px;"></p>
-    </div>
+        <div class="title">Des monstres effrayants</div>
+        <div class="images">
+            <img src="monstre.png" alt="Demon arc" class="game-image">
+            <img src="attack1_2.png" alt="minotaur" class="game-image">
+            <img src="Boss.png" alt="boss" class="game-image right-image">
+        </div>
 
 
 
 </div>
-
+</div>
 </body>
 </html>
